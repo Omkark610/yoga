@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PGR4Y0TVNP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PGR4Y0TVNP');
+</script>
+	
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yoga Atlas — Explore Every Pose. Discover Your Balance.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFF8F0;--surface:#fff;--sand:#FDE6CC;--sage:#F6C99A;--forest:#C2410C;--ever:#7C2D12;--text:#2B1A12;--muted:#6b5446;--gold:#E8A33D;--line:#F0D9C0;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2A1509;--surface:#3a1f10;--sand:#4a2916;--sage:#b8763a;--forest:#FDBA74;--ever:#1a0c05;--text:#FFF4E8;--muted:#e3c9b1;--gold:#F5B14E;--line:#5a3520;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#2A1509;--surface:#3a1f10;--sand:#4a2916;--sage:#b8763a;--forest:#FDBA74;--ever:#1a0c05;--text:#FFF4E8;--muted:#e3c9b1;--gold:#F5B14E;--line:#5a3520;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.65 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;line-height:1.15;margin:0}
+a{color:inherit}:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-family:'DM Serif Display',serif;font-size:1.4rem;text-decoration:none;color:var(--forest)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:.92rem}
+nav ul a{text-decoration:none;color:var(--muted)}nav ul a:hover{color:var(--forest)}
+.hero{background:linear-gradient(160deg,#7C2D12,#C2410C 70%,#EA580C);color:#FAF8F2;padding:90px 0 80px;position:relative;overflow:hidden}
+.hero .wrap{position:relative}
+.sun{position:absolute;right:6%;top:50%;width:min(280px,32vw);aspect-ratio:1;transform:translateY(-50%);border-radius:50%;background:radial-gradient(circle at 40% 38%,#FFE9B0,#FDB93F 55%,#F97316);box-shadow:0 0 80px 30px #FDB93F55;animation:glow 5s ease-in-out infinite}
+@keyframes glow{50%{box-shadow:0 0 110px 46px #FDB93F77}}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.75rem;color:#ffd9a0}
+.hero h1{font-size:clamp(2.3rem,6vw,4.2rem);margin:14px 0 18px;max-width:14ch}
+.hero p{max-width:56ch;color:#ffe9d6}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;border:1.5px solid var(--forest);background:var(--forest);color:var(--bg);font:600 .95rem Inter,sans-serif;text-decoration:none;cursor:pointer}
+.hero .btn{background:#FAF8F2;color:var(--ever);border-color:#FAF8F2}.hero .btn.ghost{background:transparent;color:#FAF8F2}
+.fade{animation:fade .9s ease both}@keyframes fade{from{opacity:0;transform:translateY(14px)}}
+section{padding:64px 0}.alt{background:var(--sand)}
+h2{font-size:2rem;margin-bottom:8px}.sub{color:var(--muted);margin:0 0 26px;max-width:60ch}
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.cat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;text-align:left;color:var(--text);font:500 .95rem Inter,sans-serif;cursor:pointer}
+.cat:hover{border-color:var(--gold)}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+input[type=search],select{padding:11px 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--text);font:inherit}
+input[type=search]{flex:1;min-width:220px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chip{padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--text);font:500 .85rem Inter,sans-serif;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--forest);color:var(--bg);border-color:var(--forest)}
+.count{color:var(--muted);font-size:.9rem;margin:6px 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.ph{height:150px;background:var(--sand);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:.7rem;color:var(--muted);text-align:center;padding:8px;border-bottom:1px solid var(--line)}
+.ph svg{width:100%;height:118px;fill:none;stroke:var(--forest);stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}.ph svg circle{fill:var(--forest);stroke:none}.ph svg .g{stroke:var(--gold);stroke-width:1.5}
+
+.cb{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.sk{font-family:'DM Serif Display',serif;font-size:1.25rem;color:var(--forest)}.en{font-size:.9rem;color:var(--muted);margin-top:-4px}
+.meta{display:flex;gap:8px;font-size:.75rem}.tag{padding:2px 10px;border-radius:999px;background:var(--sand);color:var(--text)}.tag.d{border:1px solid var(--gold)}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:8px}
+.link{background:none;border:0;color:var(--forest);font:600 .9rem Inter,sans-serif;cursor:pointer;text-decoration:underline;padding:4px}
+.fav{background:none;border:0;font-size:1.3rem;cursor:pointer;color:var(--gold);padding:4px 8px}
+dialog{max-width:560px;width:calc(100% - 32px);border:0;border-radius:18px;background:var(--bg);color:var(--text);padding:26px}
+dialog::backdrop{background:#0008}
+dialog h3{font-size:1.8rem;color:var(--forest)}dialog h4{margin:18px 0 4px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+dialog ol,dialog ul{margin:0;padding-left:20px}
+.note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--gold);padding-left:12px;margin-top:20px}
+footer{background:var(--ever);color:#f5d9c0;padding:36px 0;font-size:.88rem}
+#music{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:50;display:flex;align-items:center;gap:10px;background:var(--forest);color:var(--bg);border-radius:999px;padding:6px 8px 6px 6px;box-shadow:0 6px 22px #0005}
+#mbtn{width:46px;height:46px;border-radius:50%;border:0;background:var(--gold);color:#3b1606;font-size:1.25rem;cursor:pointer;display:grid;place-items:center}
+#vol{width:84px;accent-color:var(--gold)}#music label{font-size:.78rem;display:flex;align-items:center;gap:8px;padding-right:6px}
+#music.on #mbtn{animation:pulse 2.8s ease-in-out infinite}@keyframes pulse{50%{box-shadow:0 0 0 9px #E8A33D44}}
+@media (max-width:720px){nav ul{display:none}#vol{display:none}.sun{opacity:.35;right:-40px;width:220px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+<a class="logo" href="#top">Yoga Atlas</a>
+<ul><li><a href="#categories">Categories</a></li><li><a href="#poses">Pose Library</a></li><li><a href="#safety">Safety</a></li></ul>
+<button class="chip" id="favOnly" aria-pressed="false">♥ Favourites</button>
+</nav></div></header>
+<main id="top">
+<div class="hero"><div class="sun" aria-hidden="true"></div><div class="wrap fade">
+<div class="eyebrow">Explore Every Pose. Discover Your Balance.</div>
+<h1>Find Your Pose. Find Your Balance.</h1>
+<p>Explore yoga from its traditional roots to modern practice. Browse asanas, learn their techniques and benefits, and build a practice that fits your experience and goals.</p>
+<p style="margin-top:26px"><a class="btn" href="#poses">Explore All Poses</a> <a class="btn ghost" href="#categories">Browse Categories</a></p>
+</div></div>
+
+<section id="categories"><div class="wrap"><h2>Quick discovery</h2><p class="sub">Choose a category to filter the pose library.</p><div class="cats" id="cats"></div></div></section>
+
+<section id="poses" class="alt"><div class="wrap"><h2>Pose library</h2>
+<p class="sub">84 well-known poses: a curated selection, not a single definitive list, since the number of asanas varies by tradition and by whether variations are counted. Search, combine filters and save favourites.</p>
+<div class="tools"><input type="search" id="q" placeholder="Search poses…" aria-label="Search poses"><select id="sort" aria-label="Sort poses"><option value="az">A–Z</option><option value="diff">Difficulty</option></select><button class="chip" id="reset">Reset filters</button></div>
+<div class="chips" id="levels" role="group" aria-label="Difficulty"></div>
+<div class="chips" id="tags" role="group" aria-label="Categories"></div>
+<div class="count" id="count" aria-live="polite"></div>
+<div class="grid" id="grid"></div></div></section>
+
+<section id="safety"><div class="wrap"><h2>Practise with care</h2>
+<p class="sub">Yoga Atlas is an educational resource, not a substitute for medical advice or qualified instruction. Move without pain, use props freely, and seek a qualified teacher for inversions, advanced backbends and poses that load the neck. Not every pose suits every body.</p></div></section>
+</main>
+<footer><div class="wrap">© Yoga Atlas · Favourites are stored in this browser only and won’t sync between devices. Pose figures are original line illustrations made for this site, not photographs.</div></footer>
+
+<dialog id="dlg" aria-labelledby="dt"></dialog>
+
+<div id="music" role="group" aria-label="Background music">
+<button id="mbtn" aria-pressed="false" aria-label="Play ambient background music" title="Ambient music">♪</button>
+<label><span id="mlabel">Music off</span><input type="range" id="vol" min="0" max="100" value="55" aria-label="Music volume"></label>
+</div>
+
+<script>
+const P=[
+["Tadasana","Mountain Pose","tah-DAH-sah-nah","Beginner",["Standing"],"A foundational standing posture for alignment and body awareness.",["Stand with feet comfortably positioned and weight evenly balanced.","Lengthen the spine without forcing the lower back.","Relax the shoulders and let the arms rest naturally.","Keep the head balanced over the torso and breathe comfortably.","Avoid locking the knees."],"Place your back against a wall for feedback.","Mild balance concerns: widen the stance."],
+["Vrikshasana","Tree Pose","vrik-SHAHS-ah-nah","Beginner",["Standing","Balance"],"A one-legged balance that builds steadiness and focus.",["Begin in Mountain Pose and shift weight onto one foot.","Place the other sole on the calf or inner thigh, never on the knee.","Bring the hands to the chest or overhead.","Rest the gaze on a fixed point and breathe steadily.","Lower with control and repeat on the other side."],"Keep the toes on the floor or hold a wall.","Take care with ankle or knee instability."],
+["Adho Mukha Svanasana","Downward-Facing Dog","AH-doh MOO-kah shvah-NAHS-ah-nah","Beginner",["Standing","Strength","Forward bend"],"A weight-bearing, inverted-V shape common in flowing sequences.",["Start on hands and knees, hands shoulder-width apart.","Tuck the toes and lift the hips up and back.","Press the floor away and lengthen the spine.","Bend the knees as much as needed.","Breathe evenly, then lower the knees to rest."],"Use bent knees or hands on a chair seat.","Wrist, shoulder or blood-pressure concerns: ask a teacher about alternatives."],
+["Virabhadrasana II","Warrior II","veer-ah-bah-DRAHS-ah-nah","Beginner",["Standing","Strength"],"A strong lateral lunge with arms extended.",["Step the feet wide, front toes forward and back foot turned slightly in.","Bend the front knee over the ankle.","Extend the arms at shoulder height.","Keep the torso centred and gaze over the front hand.","Straighten the leg to exit and switch sides."],"Shorten the stance and bend less.","Knee pain: keep the bend shallow."],
+["Trikonasana","Triangle Pose","tree-koh-NAHS-ah-nah","Beginner",["Standing","Side bend"],"A wide-legged standing side stretch.",["Step the feet wide with the front toes forward.","Extend the arms and reach over the front leg.","Rest the lower hand on shin, block or ankle.","Open the chest and extend the top arm up.","Return slowly with the core engaged."],"Rest the hand on a block or chair.","Avoid forcing depth; keep the neck neutral."],
+["Balasana","Child’s Pose","bah-LAHS-ah-nah","Beginner",["Kneeling","Restorative"],"A gentle resting posture often used between more active poses.",["Kneel and bring the big toes together.","Sit the hips back toward the heels.","Fold forward and rest the forehead down.","Let the arms relax and breathe softly."],"Place a cushion under the hips or head.","Knee issues or pregnancy: widen the knees and use support."],
+["Bhujangasana","Cobra Pose","boo-jahng-GAHS-ah-nah","Beginner",["Prone","Backbend"],"A mild backbend lying on the stomach.",["Lie face down with hands beneath the shoulders.","Press the tops of the feet and pubic bone down.","Lift the chest gently, keeping elbows bent.","Keep the neck long and breathe steadily.","Lower with control."],"Keep the lift small or stay on the forearms.","Back or pregnancy concerns: seek individual guidance."],
+["Setu Bandhasana","Bridge Pose","SAY-too bahn-DAHS-ah-nah","Beginner",["Supine","Backbend"],"A supine backbend that engages the legs and glutes.",["Lie on your back with knees bent and feet hip-width.","Press the feet down and lift the hips.","Keep the knees tracking over the ankles.","Breathe evenly, then lower slowly."],"Rest the hips on a block for support.","Avoid turning the head while lifted."],
+["Paschimottanasana","Seated Forward Bend","pahsh-chee-moh-tahn-AHS-ah-nah","Intermediate",["Seated","Forward bend"],"A long seated forward fold.",["Sit with legs extended and spine tall.","Hinge forward from the hips.","Hold the shins, feet or a strap.","Keep the movement gentle and pain-free."],"Sit on a cushion and bend the knees.","Lower-back or hamstring strain: fold only as far as comfortable."],
+["Sukhasana","Easy Pose","soo-KAHS-ah-nah","Beginner",["Seated","Meditation"],"A comfortable cross-legged seat for breathing and meditation.",["Sit with legs loosely crossed.","Stack the head over the pelvis and lengthen the spine.","Rest the hands on the knees.","Switch the cross of the legs from time to time."],"Sit on a folded blanket or chair.","Raise the hips above the knees if the hips are tight."],
+["Shavasana","Corpse Pose","shah-VAHS-ah-nah","Beginner",["Supine","Relaxation"],"A final resting pose of stillness.",["Lie on your back with arms slightly away from the body.","Let the feet fall open and close the eyes.","Release effort and let breathing be natural.","Rest several minutes, then roll to one side to exit."],"Place a bolster under the knees.","Use a pillow under the head if comfortable."],
+["Utkatasana","Chair Pose","oot-kah-TAHS-ah-nah","Intermediate",["Standing","Strength"],"A standing squat-like pose that works the legs.",["Stand with feet together or hip-width.","Bend the knees and sit the hips back.","Lift the arms and keep the chest open.","Straighten the legs to exit."],"Reduce the bend or hover above a chair.","Knee discomfort: keep the bend shallow."]
+];
+const FIG={"Tadasana":[50,12,"M50 19V46M50 46L46 72M50 46L54 72M50 24L42 44M50 24L58 44"],"Vrikshasana":[50,12,"M50 19V46M50 46V72M50 46L63 54L51 57M50 26L40 34L50 35M50 26L60 34L50 35"],"Adho Mukha Svanasana":[27,60,"M14 70L52 24L88 70M14 70L22 70M88 70L96 70"],"Virabhadrasana II":[50,12,"M50 19V44M12 26H88M50 44H72V72M50 44L26 72"],"Trikonasana":[78,25,"M50 42L20 72M50 42L80 72M50 42L71 30M70 31L67 58M70 31L72 6"],"Balasana":[28,62,"M72 62L35 60M40 61L10 70M72 62L78 70L58 70"],"Bhujangasana":[28,37,"M92 70L50 68Q38 64 31 47M32 48L34 70"],"Setu Bandhasana":[8,66,"M14 70Q30 54 50 38L74 50L74 70M14 71L44 71"],"Paschimottanasana":[68,52,"M30 66L90 66M30 66Q36 42 62 50M58 51L86 64"],"Sukhasana":[50,14,"M50 21V56M50 56L26 64L44 69M50 56L74 64L56 69M50 28L38 46L34 61M50 28L62 46L66 61"],"Shavasana":[12,63,"M20 68L88 68M34 68L54 72"],"Utkatasana":[49,16,"M36 46L62 54L54 72M36 46L46 25M46 25L72 12"]};
+function fig(n){const f=FIG[n];if(!f)return `<span>Illustration not yet available</span>`;return `<span style="display:none"></span><svg viewBox="0 0 100 80" aria-hidden="true"><line class="g" x1="4" y1="73" x2="96" y2="73"/><path d="${f[2]}"/><circle cx="${f[0]}" cy="${f[1]}" r="6"/></svg><span>Original line illustration</span>`}
+`Uttanasana|Standing Forward Bend|B|Standing,Forward bend|A standing fold that lengthens the back of the legs and spine.
+Ardha Uttanasana|Half Standing Forward Bend|B|Standing,Forward bend|A flat-back halfway lift often used between folds in flowing sequences.
+Urdhva Hastasana|Upward Salute|B|Standing|Arms sweep overhead from Mountain Pose to lengthen the sides of the body.
+Parsvottanasana|Pyramid Pose|I|Standing,Forward bend|A short-stance fold over the front leg with a stretch through the hamstrings.
+Prasarita Padottanasana|Wide-Legged Forward Bend|B|Standing,Forward bend|A wide-stance fold that stretches the inner legs and releases the back.
+Virabhadrasana I|Warrior I|B|Standing,Strength|A lunge with arms raised that builds leg strength and opens the chest.
+Virabhadrasana III|Warrior III|I|Standing,Balance|A one-legged balance with torso and lifted leg extended in one line.
+Utthita Parsvakonasana|Extended Side Angle|I|Standing,Side bend|A deep lunge with a long side stretch from back heel to fingertips.
+Parivrtta Trikonasana|Revolved Triangle|I|Standing,Twist|A straight-legged standing twist that challenges balance and hamstring length.
+Ardha Chandrasana|Half Moon Pose|I|Standing,Balance|A side-opening balance on one leg, often practised near a wall.
+Garudasana|Eagle Pose|I|Standing,Balance|A balance with wrapped arms and legs that stretches the shoulders and hips.
+Natarajasana|Lord of the Dance Pose|I|Standing,Balance,Backbend|A standing balance with a lifted back leg and a gentle backbend.
+Utthita Hasta Padangusthasana|Extended Hand-to-Big-Toe Pose|I|Standing,Balance|A standing balance holding the lifted leg, often with a strap.
+Parivrtta Utkatasana|Revolved Chair Pose|I|Standing,Twist|A twist in Chair Pose that challenges legs, core and balance.
+Malasana|Garland Pose|B|Squat,Hip opener|A deep squat that opens the hips and groins.
+Anjaneyasana|Low Lunge|B|Kneeling,Hip opener|A lunge with the back knee down that stretches the hip flexors.
+Utkata Konasana|Goddess Pose|B|Standing,Hip opener,Strength|A wide squat with bent arms that works the legs and opens the hips.
+Parivrtta Parsvakonasana|Revolved Side Angle|I|Standing,Twist|A lunge twist that asks for balance, mobility and steady breathing.
+Vasisthasana|Side Plank|I|Arm balance,Strength|A one-handed support that builds shoulder and core strength.
+Viparita Virabhadrasana|Reverse Warrior|B|Standing,Side bend|A Warrior II variation with a gentle backward side bend.
+Parighasana|Gate Pose|B|Kneeling,Side bend|A kneeling side stretch with one leg extended.
+Dandasana|Staff Pose|B|Seated|A seated posture with extended legs that teaches upright alignment.
+Janu Sirsasana|Head-to-Knee Forward Bend|B|Seated,Forward bend|A one-legged seated fold stretching the hamstrings and back.
+Upavistha Konasana|Wide-Angle Seated Forward Bend|I|Seated,Forward bend,Hip opener|A seated wide-leg fold stretching the inner thighs and hamstrings.
+Baddha Konasana|Bound Angle Pose|B|Seated,Hip opener|Soles together and knees open for a gentle inner-thigh stretch.
+Ardha Matsyendrasana|Half Lord of the Fishes Pose|I|Seated,Twist|A classic seated twist that lengthens and rotates the spine.
+Gomukhasana|Cow Face Pose|I|Seated,Hip opener|A seated pose stretching the hips, with an arm bind for the shoulders.
+Padmasana|Lotus Pose|I|Seated,Meditation|A traditional cross-legged meditation seat that needs open hips and ankles.
+Virasana|Hero Pose|B|Kneeling,Meditation|A kneeling seat between the feet that stretches the thighs and ankles.
+Vajrasana|Thunderbolt Pose|B|Kneeling,Meditation|A kneeling seat on the heels used for breathing and meditation.
+Siddhasana|Accomplished Pose|B|Seated,Meditation|A traditional meditation seat with the heels stacked near the pelvis.
+Navasana|Boat Pose|I|Seated,Core,Strength|A V-shaped balance on the sitting bones that works the core.
+Marichyasana III|Marichi’s Pose III|I|Seated,Twist|A seated twist with one knee bent and the foot planted.
+Kurmasana|Tortoise Pose|A|Seated,Forward bend|A deep seated fold that needs open hamstrings and hips.
+Supta Virasana|Reclining Hero Pose|I|Kneeling,Restorative|A reclined Hero Pose that stretches the thighs; often bolster-supported.
+Simhasana|Lion Pose|B|Kneeling|A kneeling pose with open mouth and extended tongue, paired with breath.
+Mandukasana|Frog Pose|I|Prone,Hip opener|A wide-knee pose that opens the inner thighs and groins.
+Hanumanasana|Monkey Pose (Front Splits)|A|Seated,Hip opener|The front splits, which need long preparation and warm muscles.
+Bharadvajasana|Bharadvaja’s Twist|B|Seated,Twist|A gentle seated twist with the legs folded to one side.
+Apanasana|Knees-to-Chest Pose|B|Supine,Relaxation|Hugging the knees toward the chest to release the lower back.
+Supta Baddha Konasana|Reclining Bound Angle Pose|B|Supine,Restorative,Hip opener|A supported reclined pose with soles together for gentle hip opening.
+Supta Padangusthasana|Reclining Hand-to-Big-Toe Pose|B|Supine|A lying hamstring stretch, typically done with a strap.
+Supta Matsyendrasana|Supine Twist|B|Supine,Twist|A reclined twist that gently releases the spine.
+Ananda Balasana|Happy Baby Pose|B|Supine,Hip opener|Lying on the back and holding the feet with knees wide.
+Viparita Karani|Legs-Up-the-Wall Pose|B|Supine,Inversion,Restorative|A gentle supported inversion with the legs resting on a wall.
+Halasana|Plow Pose|I|Supine,Inversion|The legs extend overhead; avoid turning the head and use props if needed.
+Sarvangasana|Shoulderstand|I|Supine,Inversion|A supported inversion that loads the shoulders and neck, best learned with a teacher.
+Matsyasana|Fish Pose|I|Supine,Backbend|A chest-opening backbend lying down, often taught as a counterpose.
+Pawanmuktasana|Wind-Relieving Pose|B|Supine|Pulling one or both knees toward the chest for a gentle hip and back release.
+Urdhva Dhanurasana|Upward Bow (Wheel) Pose|A|Supine,Backbend|A deep backbend that needs spine, shoulder and hip preparation.
+Salabhasana|Locust Pose|B|Prone,Backbend,Strength|Lifting chest or legs while on the stomach to strengthen the back body.
+Dhanurasana|Bow Pose|I|Prone,Backbend|Holding the ankles while lifting chest and thighs into a bow shape.
+Urdhva Mukha Svanasana|Upward-Facing Dog|B|Prone,Backbend|A backbend with straight arms and thighs lifted off the floor.
+Makarasana|Crocodile Pose|B|Prone,Relaxation|A prone resting position with the head on stacked forearms.
+Ustrasana|Camel Pose|I|Kneeling,Backbend|A kneeling backbend that opens the front of the body.
+Marjaryasana–Bitilasana|Cat–Cow|B|Kneeling|Alternately rounding and arching the spine on hands and knees.
+Eka Pada Rajakapotasana|Pigeon Pose|I|Kneeling,Hip opener|A deep hip opener that can be softened with props.
+Phalakasana|Plank Pose|B|Prone,Core,Strength|A straight-line support on hands and toes that builds core strength.
+Chaturanga Dandasana|Four-Limbed Staff Pose|I|Prone,Strength|A low plank with bent elbows, common in Sun Salutations.
+Bakasana|Crow Pose|I|Arm balance|An arm balance with the knees resting near the upper arms.
+Adho Mukha Vrksasana|Handstand|A|Arm balance,Inversion|A full inversion that needs strong shoulders and a wall or teacher.
+Sirsasana|Headstand|A|Inversion|An inversion that needs preparation and supervision because of neck loading.
+Pincha Mayurasana|Forearm Stand|A|Arm balance,Inversion|An inversion balanced on the forearms, usually practised at a wall.
+Mayurasana|Peacock Pose|A|Arm balance|A horizontal arm balance with the elbows pressed into the abdomen.
+Astavakrasana|Eight-Angle Pose|A|Arm balance,Twist|An arm balance with the legs wrapped around one arm.
+Parsva Bakasana|Side Crow Pose|A|Arm balance,Twist|A twisting arm balance with both knees resting on one arm.
+Purvottanasana|Upward Plank Pose|I|Supine,Strength|A reverse plank that opens the chest and strengthens the back body.
+Tolasana|Scale Pose|I|Seated,Arm balance|A seated lift using the hands to raise the body off the floor.
+Utthan Pristhasana|Lizard Pose|I|Kneeling,Hip opener|A low lunge with both hands inside the front foot.
+Sasangasana|Rabbit Pose|I|Kneeling,Forward bend|A kneeling fold with the crown of the head toward the floor; avoid heavy weight on the neck.
+Karnapidasana|Ear-Pressure Pose|A|Supine,Inversion|A deep Plow variation with knees by the ears; needs preparation and neck care.
+Kraunchasana|Heron Pose|A|Seated,Forward bend|A one-legged seated pose with the other leg lifted toward the chest; needs open hamstrings.`.split("\n").forEach(l=>{const[s,e,lv,t,d]=l.split("|"),tg=t.split(","),hard=lv==="A"||tg.includes("Inversion");P.push([s,e,"",{B:"Beginner",I:"Intermediate",A:"Advanced"}[lv],tg,d,[],"",hard?"Needs preparation and qualified supervision. Avoid with neck, eye-pressure or blood-pressure concerns unless cleared by a health professional.":"Move within a comfortable range, use props freely and stop if you feel pain."])});
+const LV=["Beginner","Intermediate","Advanced"];
+const CATS=[["Beginner Yoga","Beginner"],["Standing Poses","Standing"],["Strength & Balance","Strength"],["Backbends","Backbend"],["Forward Folds","Forward bend"],["Relaxation","Relaxation"]];
+const TAGS=[...new Set(P.flatMap(p=>p[4]))].sort();
+const $=s=>document.querySelector(s),slug=n=>n.toLowerCase().replace(/[^a-z]+/g,"-");
+let fav=new Set();try{fav=new Set(JSON.parse(localStorage.getItem("ya-fav")||"[]"))}catch(e){}
+const saveFav=()=>{try{localStorage.setItem("ya-fav",JSON.stringify([...fav]))}catch(e){}};
+const st={q:"",lv:new Set(),tg:new Set(),fo:false};
+function chip(parent,txt,set,key){const b=document.createElement("button");b.className="chip";b.textContent=txt;b.setAttribute("aria-pressed","false");b.dataset.k=key;b.onclick=()=>{set.has(key)?set.delete(key):set.add(key);render()};parent.append(b)}
+LV.forEach(l=>chip($("#levels"),l,st.lv,l));TAGS.forEach(t=>chip($("#tags"),t,st.tg,t));
+CATS.forEach(([n,k])=>{const b=document.createElement("button");b.className="cat";b.textContent=n;b.onclick=()=>{st.lv.clear();st.tg.clear();k==="Beginner"?st.lv.add(k):st.tg.add(k);render();$("#poses").scrollIntoView()};$("#cats").append(b)});
+function render(){
+ const q=st.q.toLowerCase();
+ let L=P.filter(p=>(!q||(p[0]+" "+p[1]).toLowerCase().includes(q)||p[4].join(" ").toLowerCase().includes(q)||p[3].toLowerCase().includes(q))&&(!st.lv.size||st.lv.has(p[3]))&&[...st.tg].every(t=>p[4].includes(t))&&(!st.fo||fav.has(slug(p[0]))));
+ L.sort($("#sort").value==="diff"?(a,b)=>LV.indexOf(a[3])-LV.indexOf(b[3])||a[0].localeCompare(b[0]):(a,b)=>a[0].localeCompare(b[0]));
+ document.querySelectorAll(".chip[data-k]").forEach(c=>c.setAttribute("aria-pressed",st.lv.has(c.dataset.k)||st.tg.has(c.dataset.k)));
+ $("#favOnly").setAttribute("aria-pressed",st.fo);
+ $("#count").textContent=L.length+" "+(L.length===1?"pose":"poses")+" found";
+ $("#grid").innerHTML=L.length?"":"<p>No poses match these filters. Try resetting them.</p>";
+ L.forEach(p=>{const id=slug(p[0]),f=fav.has(id),c=document.createElement("article");c.className="card";
+  c.innerHTML=`<div class="ph" role="img" aria-label="${FIG[p[0]]?"Line illustration of ":"No illustration yet for "}${p[1]}">${fig(p[0])}</div><div class="cb"><div class="sk">${p[0]}</div><div class="en">${p[1]}</div><div class="meta"><span class="tag d">${p[3]}</span><span class="tag">${p[4][0]}</span></div><p style="margin:4px 0;font-size:.9rem">${p[5]}</p><div class="row"><button class="link">View pose</button><button class="fav" aria-pressed="${f}" aria-label="${f?"Remove":"Add"} ${p[1]} ${f?"from":"to"} favourites">${f?"♥":"♡"}</button></div></div>`;
+  c.querySelector(".link").onclick=()=>show(p);
+  c.querySelector(".fav").onclick=()=>{f?fav.delete(id):fav.add(id);saveFav();render()};
+  $("#grid").append(c)})}
+function show(p){const d=$("#dlg");
+ d.innerHTML=`<div class="ph" role="img" aria-label="${FIG[p[0]]?"Line illustration of ":"No illustration yet for "}${p[1]}" style="border-radius:12px;margin-bottom:14px">${fig(p[0])}</div><h3 id="dt">${p[0]}</h3><div class="en">${p[1]} · ${p[2]?`<i>${p[2]}</i> · `:""}${p[3]}</div><p>${p[5]}</p>${p[6].length?`<h4>How to perform it</h4><ol>${p[6].map(s=>`<li>${s}</li>`).join("")}</ol><h4>Easier variation</h4><p style="margin:0">${p[7]}</p>`:`<p class="note">Step-by-step instructions for this pose are not written yet. Learn it with a qualified teacher or a reputable reference.</p>`}<h4>Precautions</h4><p style="margin:0">${p[8]}</p><p class="note">General educational guidance only. Move without pain and consult a qualified teacher or health professional when unsure.</p><p style="text-align:right;margin:18px 0 0"><button class="btn" id="x">Close</button></p>`;
+ d.showModal();$("#x").onclick=()=>d.close()}
+$("#dlg").addEventListener("click",e=>{if(e.target.id==="dlg")e.target.close()});
+$("#q").oninput=e=>{st.q=e.target.value;render()};$("#sort").onchange=render;
+$("#favOnly").onclick=()=>{st.fo=!st.fo;render()};
+$("#reset").onclick=()=>{st.q="";$("#q").value="";st.lv.clear();st.tg.clear();st.fo=false;render()};
+render();
+
+/* Ambient music: generated live with the Web Audio API (no audio files) */
+let ac,master,on=false,timer,lp;
+const mb=$("#mbtn"),vol=$("#vol");
+const SCALE=[220,246.94,261.63,329.63,392,440,523.25,659.25]; // gentle A-minor/Dorian-like set
+function build(){
+ ac=new (window.AudioContext||window.webkitAudioContext)();
+ master=ac.createGain();master.gain.value=0;
+ lp=ac.createBiquadFilter();lp.type="lowpass";lp.frequency.value=1400;
+ const dl=ac.createDelay(1.5);dl.delayTime.value=.55;const fb=ac.createGain();fb.gain.value=.38;
+ dl.connect(fb);fb.connect(dl);
+ lp.connect(master);dl.connect(master);master.connect(ac.destination);
+ [110,164.81,220,277.18].forEach((f,i)=>{ // soft evolving drone
+  const o=ac.createOscillator(),g=ac.createGain(),l=ac.createOscillator(),lg=ac.createGain();
+  o.type=i%2?"triangle":"sine";o.frequency.value=f;g.gain.value=.05;
+  l.frequency.value=.06+i*.035;lg.gain.value=.025;l.connect(lg);lg.connect(g.gain);
+  o.connect(g);g.connect(lp);o.start();l.start()});
+ window._dl=dl;
+}
+function bell(){
+ if(!on)return;const t=ac.currentTime,f=SCALE[Math.floor(Math.random()*SCALE.length)];
+ const o=ac.createOscillator(),g=ac.createGain();o.type="sine";o.frequency.value=f;
+ g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.09,t+.04);g.gain.exponentialRampToValueAtTime(.0008,t+4.5);
+ o.connect(g);g.connect(lp);g.connect(window._dl);o.start(t);o.stop(t+4.6);
+ timer=setTimeout(bell,2800+Math.random()*4200)}
+function level(){return Math.pow(vol.value/100,1.6)*.9}
+async function toggle(){
+ if(!ac)build();
+ if(ac.state==="suspended")await ac.resume();
+ on=!on;const t=ac.currentTime;master.gain.cancelScheduledValues(t);master.gain.setTargetAtTime(on?level():0,t,.9);
+ clearTimeout(timer);if(on)bell();
+ mb.setAttribute("aria-pressed",on);mb.textContent=on?"❚❚":"♪";
+ mb.setAttribute("aria-label",on?"Pause ambient background music":"Play ambient background music");
+ $("#mlabel").textContent=on?"Music on":"Music off";$("#music").classList.toggle("on",on)}
+mb.onclick=toggle;
+vol.oninput=()=>{if(on)master.gain.setTargetAtTime(level(),ac.currentTime,.1)};
+document.addEventListener("visibilitychange",()=>{if(!ac)return;document.hidden?ac.suspend():(on&&ac.resume())});
+</script>
+</body>
+</html>

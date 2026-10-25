@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
 
+<!-- Google AdSense -->
+<meta name="google-adsense-account" content="ca-pub-7963880628277539">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7963880628277539" crossorigin="anonymous"></script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PGR4Y0TVNP"></script>
 <script>
@@ -18,9 +22,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#FFF8F0;--surface:#fff;--sand:#FDE6CC;--sage:#F6C99A;--forest:#C2410C;--ever:#7C2D12;--text:#2B1A12;--muted:#6b5446;--gold:#E8A33D;--line:#F0D9C0;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2A1509;--surface:#3a1f10;--sand:#4a2916;--sage:#b8763a;--forest:#FDBA74;--ever:#1a0c05;--text:#FFF4E8;--muted:#e3c9b1;--gold:#F5B14E;--line:#5a3520;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#2A1509;--surface:#3a1f10;--sand:#4a2916;--sage:#b8763a;--forest:#FDBA74;--ever:#1a0c05;--text:#FFF4E8;--muted:#e3c9b1;--gold:#F5B14E;--line:#5a3520;color-scheme:dark}
+:root{--bg:#F6F9F7;--surface:#fff;--sand:#E8F3E8;--sage:#D4E4DD;--forest:#0B526B;--ever:#073A4D;--text:#12303A;--muted:#4F6A70;--gold:#A65F35;--on-gold:#fff;--line:#D4E4DD;--blue:#3C799A;--green:#3C8170;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1F26;--surface:#102C36;--sand:#16394A;--sage:#3C799A;--forest:#8FCBE0;--ever:#06161B;--text:#EAF4F2;--muted:#B5CCCB;--gold:#D9A06B;--on-gold:#06161B;--line:#1F4556;--blue:#5B9AB8;--green:#5BB09A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0B1F26;--surface:#102C36;--sand:#16394A;--sage:#3C799A;--forest:#8FCBE0;--ever:#06161B;--text:#EAF4F2;--muted:#B5CCCB;--gold:#D9A06B;--on-gold:#06161B;--line:#1F4556;--blue:#5B9AB8;--green:#5BB09A;color-scheme:dark}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.65 Inter,system-ui,sans-serif}
 h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;line-height:1.15;margin:0}
@@ -31,13 +35,16 @@ nav{display:flex;align-items:center;justify-content:space-between;height:62px}
 .logo{font-family:'DM Serif Display',serif;font-size:1.4rem;text-decoration:none;color:var(--forest)}
 nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:.92rem}
 nav ul a{text-decoration:none;color:var(--muted)}nav ul a:hover{color:var(--forest)}
-.hero{background:linear-gradient(160deg,#7C2D12,#C2410C 70%,#EA580C);color:#FAF8F2;padding:90px 0 80px;position:relative;overflow:hidden}
+.hero{background:linear-gradient(160deg,#073A4D,#0B526B 45%,#3C799A 80%,#458D78);color:#FAF8F2;padding:90px 0 80px;position:relative;overflow:hidden}
 .hero .wrap{position:relative}
-.sun{position:absolute;right:6%;top:50%;width:min(280px,32vw);aspect-ratio:1;transform:translateY(-50%);border-radius:50%;background:radial-gradient(circle at 40% 38%,#FFE9B0,#FDB93F 55%,#F97316);box-shadow:0 0 80px 30px #FDB93F55;animation:glow 5s ease-in-out infinite}
-@keyframes glow{50%{box-shadow:0 0 110px 46px #FDB93F77}}
-.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.75rem;color:#ffd9a0}
+.sun{position:absolute;right:6%;top:50%;width:min(280px,32vw);aspect-ratio:1;transform:translateY(-50%);border-radius:50%;background:radial-gradient(circle at 40% 38%,#FFC247,#FF8000 48%,#FF5A00);box-shadow:0 0 80px 30px #FF8A1F77;animation:glow 5s ease-in-out infinite,float 7s ease-in-out infinite}
+.sun::before{content:"";position:absolute;inset:-26%;border-radius:50%;background:repeating-conic-gradient(#FF8A1F66 0 5deg,transparent 5deg 18deg);-webkit-mask:radial-gradient(circle,transparent 0 63%,#000 67%,transparent 100%);mask:radial-gradient(circle,transparent 0 63%,#000 67%,transparent 100%);animation:spin 40s linear infinite;pointer-events:none}
+@keyframes float{0%,100%{transform:translateY(-50%) scale(1)}50%{transform:translateY(calc(-50% - 16px)) scale(1.05)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes glow{50%{box-shadow:0 0 120px 50px #FF8A1F99}}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.75rem;color:#BFE3D6}
 .hero h1{font-size:clamp(2.3rem,6vw,4.2rem);margin:14px 0 18px;max-width:14ch}
-.hero p{max-width:56ch;color:#ffe9d6}
+.hero p{max-width:56ch;color:#DCEFEA}
 .btn{display:inline-block;padding:12px 22px;border-radius:999px;border:1.5px solid var(--forest);background:var(--forest);color:var(--bg);font:600 .95rem Inter,sans-serif;text-decoration:none;cursor:pointer}
 .hero .btn{background:#FAF8F2;color:var(--ever);border-color:#FAF8F2}.hero .btn.ghost{background:transparent;color:#FAF8F2}
 .fade{animation:fade .9s ease both}@keyframes fade{from{opacity:0;transform:translateY(14px)}}
@@ -64,16 +71,23 @@ input[type=search]{flex:1;min-width:220px}
 .row{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:8px}
 .link{background:none;border:0;color:var(--forest);font:600 .9rem Inter,sans-serif;cursor:pointer;text-decoration:underline;padding:4px}
 .fav{background:none;border:0;font-size:1.3rem;cursor:pointer;color:var(--gold);padding:4px 8px}
-dialog{max-width:560px;width:calc(100% - 32px);border:0;border-radius:18px;background:var(--bg);color:var(--text);padding:26px}
+dialog{max-width:860px;width:calc(100% - 32px);border:0;border-radius:18px;background:var(--bg);color:var(--text);padding:26px}
+.dh{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.dh h3{margin:0}
+.fsb{flex:none;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);background:var(--sand);color:var(--forest);display:grid;place-items:center;cursor:pointer;padding:0}
+.fsb:hover{border-color:var(--forest)}.fsb svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ph.vid{height:auto;padding:0;aspect-ratio:16/9;overflow:hidden;border:0}.ph.vid iframe{width:100%;height:100%;border:0;display:block}
+dialog:fullscreen{max-width:none;width:100%;height:100%;border-radius:0;overflow:auto}
+dialog:fullscreen .ph.vid{max-height:70vh;margin-inline:auto}
+.ph.img{height:auto;aspect-ratio:3/2;padding:0;overflow:hidden;background:#fff}.ph.img img{width:100%;height:100%;object-fit:cover;display:block}
 dialog::backdrop{background:#0008}
 dialog h3{font-size:1.8rem;color:var(--forest)}dialog h4{margin:18px 0 4px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
 dialog ol,dialog ul{margin:0;padding-left:20px}
 .note{font-size:.85rem;color:var(--muted);border-left:3px solid var(--gold);padding-left:12px;margin-top:20px}
-footer{background:var(--ever);color:#f5d9c0;padding:36px 0;font-size:.88rem}
+footer{background:var(--ever);color:#CFE3DE;padding:36px 0;font-size:.88rem}
 #music{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:50;display:flex;align-items:center;gap:10px;background:var(--forest);color:var(--bg);border-radius:999px;padding:6px 8px 6px 6px;box-shadow:0 6px 22px #0005}
-#mbtn{width:46px;height:46px;border-radius:50%;border:0;background:var(--gold);color:#3b1606;font-size:1.25rem;cursor:pointer;display:grid;place-items:center}
+#mbtn{width:46px;height:46px;border-radius:50%;border:0;background:var(--gold);color:var(--on-gold);font-size:1.25rem;cursor:pointer;display:grid;place-items:center}
 #vol{width:84px;accent-color:var(--gold)}#music label{font-size:.78rem;display:flex;align-items:center;gap:8px;padding-right:6px}
-#music.on #mbtn{animation:pulse 2.8s ease-in-out infinite}@keyframes pulse{50%{box-shadow:0 0 0 9px #E8A33D44}}
+#music.on #mbtn{animation:pulse 2.8s ease-in-out infinite}@keyframes pulse{50%{box-shadow:0 0 0 9px #A65F3544}}
 @media (max-width:720px){nav ul{display:none}#vol{display:none}.sun{opacity:.35;right:-40px;width:220px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
 </style>
@@ -130,6 +144,7 @@ const P=[
 ["Utkatasana","Chair Pose","oot-kah-TAHS-ah-nah","Intermediate",["Standing","Strength"],"A standing squat-like pose that works the legs.",["Stand with feet together or hip-width.","Bend the knees and sit the hips back.","Lift the arms and keep the chest open.","Straighten the legs to exit."],"Reduce the bend or hover above a chair.","Knee discomfort: keep the bend shallow."]
 ];
 const FIG={"Tadasana":[50,12,"M50 19V46M50 46L46 72M50 46L54 72M50 24L42 44M50 24L58 44"],"Vrikshasana":[50,12,"M50 19V46M50 46V72M50 46L63 54L51 57M50 26L40 34L50 35M50 26L60 34L50 35"],"Adho Mukha Svanasana":[27,60,"M14 70L52 24L88 70M14 70L22 70M88 70L96 70"],"Virabhadrasana II":[50,12,"M50 19V44M12 26H88M50 44H72V72M50 44L26 72"],"Trikonasana":[78,25,"M50 42L20 72M50 42L80 72M50 42L71 30M70 31L67 58M70 31L72 6"],"Balasana":[28,62,"M72 62L35 60M40 61L10 70M72 62L78 70L58 70"],"Bhujangasana":[28,37,"M92 70L50 68Q38 64 31 47M32 48L34 70"],"Setu Bandhasana":[8,66,"M14 70Q30 54 50 38L74 50L74 70M14 71L44 71"],"Paschimottanasana":[68,52,"M30 66L90 66M30 66Q36 42 62 50M58 51L86 64"],"Sukhasana":[50,14,"M50 21V56M50 56L26 64L44 69M50 56L74 64L56 69M50 28L38 46L34 61M50 28L62 46L66 61"],"Shavasana":[12,63,"M20 68L88 68M34 68L54 72"],"Utkatasana":[49,16,"M36 46L62 54L54 72M36 46L46 25M46 25L72 12"]};
+const IMG={"Adho Mukha Svanasana":"https://yoga.omkarkadam.in/image/1-Adho-Mukha-Svanasana-(Downward-Facing-Dog).png","Adho Mukha Vrksasana":"https://yoga.omkarkadam.in/image/2-Adho-Mukha-Vrksasana-(Handstand).png","Ananda Balasana":"https://yoga.omkarkadam.in/image/3-Ananda-Balasana-(Happy-Baby-Pose).png","Anjaneyasana":"https://yoga.omkarkadam.in/image/4-Anjaneyasana-(Low-Lunge).png","Apanasana":"https://yoga.omkarkadam.in/image/5-Apanasana-(Knees-to-Chest-Pose).png","Ardha Chandrasana":"https://yoga.omkarkadam.in/image/6-Ardha-Chandrasana-(Half-Moon-Pose).png","Ardha Matsyendrasana":"https://yoga.omkarkadam.in/image/7-Ardha-Matsyendrasana-(Half-Lord-of-the-Fishes-Pose).png"};
 function fig(n){const f=FIG[n];if(!f)return `<span>Illustration not yet available</span>`;return `<span style="display:none"></span><svg viewBox="0 0 100 80" aria-hidden="true"><line class="g" x1="4" y1="73" x2="96" y2="73"/><path d="${f[2]}"/><circle cx="${f[0]}" cy="${f[1]}" r="6"/></svg><span>Original line illustration</span>`}
 `Uttanasana|Standing Forward Bend|B|Standing,Forward bend|A standing fold that lengthens the back of the legs and spine.
 Ardha Uttanasana|Half Standing Forward Bend|B|Standing,Forward bend|A flat-back halfway lift often used between folds in flowing sequences.
@@ -222,13 +237,21 @@ function render(){
  $("#count").textContent=L.length+" "+(L.length===1?"pose":"poses")+" found";
  $("#grid").innerHTML=L.length?"":"<p>No poses match these filters. Try resetting them.</p>";
  L.forEach(p=>{const id=slug(p[0]),f=fav.has(id),c=document.createElement("article");c.className="card";
-  c.innerHTML=`<div class="ph" role="img" aria-label="${FIG[p[0]]?"Line illustration of ":"No illustration yet for "}${p[1]}">${fig(p[0])}</div><div class="cb"><div class="sk">${p[0]}</div><div class="en">${p[1]}</div><div class="meta"><span class="tag d">${p[3]}</span><span class="tag">${p[4][0]}</span></div><p style="margin:4px 0;font-size:.9rem">${p[5]}</p><div class="row"><button class="link">View pose</button><button class="fav" aria-pressed="${f}" aria-label="${f?"Remove":"Add"} ${p[1]} ${f?"from":"to"} favourites">${f?"♥":"♡"}</button></div></div>`;
+  c.innerHTML=`${IMG[p[0]]?`<div class="ph img"><img src="${IMG[p[0]]}" alt="Step-by-step guide to ${p[1]}" loading="lazy"></div>`:`<div class="ph" role="img" aria-label="${FIG[p[0]]?"Line illustration of ":"No illustration yet for "}${p[1]}">${fig(p[0])}</div>`}<div class="cb"><div class="sk">${p[0]}</div><div class="en">${p[1]}</div><div class="meta"><span class="tag d">${p[3]}</span><span class="tag">${p[4][0]}</span></div><p style="margin:4px 0;font-size:.9rem">${p[5]}</p><div class="row"><button class="link">View pose</button><button class="fav" aria-pressed="${f}" aria-label="${f?"Remove":"Add"} ${p[1]} ${f?"from":"to"} favourites">${f?"♥":"♡"}</button></div></div>`;
   c.querySelector(".link").onclick=()=>show(p);
   c.querySelector(".fav").onclick=()=>{f?fav.delete(id):fav.add(id);saveFav();render()};
   $("#grid").append(c)})}
 function show(p){const d=$("#dlg");
- d.innerHTML=`<div class="ph" role="img" aria-label="${FIG[p[0]]?"Line illustration of ":"No illustration yet for "}${p[1]}" style="border-radius:12px;margin-bottom:14px">${fig(p[0])}</div><h3 id="dt">${p[0]}</h3><div class="en">${p[1]} · ${p[2]?`<i>${p[2]}</i> · `:""}${p[3]}</div><p>${p[5]}</p>${p[6].length?`<h4>How to perform it</h4><ol>${p[6].map(s=>`<li>${s}</li>`).join("")}</ol><h4>Easier variation</h4><p style="margin:0">${p[7]}</p>`:`<p class="note">Step-by-step instructions for this pose are not written yet. Learn it with a qualified teacher or a reputable reference.</p>`}<h4>Precautions</h4><p style="margin:0">${p[8]}</p><p class="note">General educational guidance only. Move without pain and consult a qualified teacher or health professional when unsure.</p><p style="text-align:right;margin:18px 0 0"><button class="btn" id="x">Close</button></p>`;
- d.showModal();$("#x").onclick=()=>d.close()}
+ const VID={"Adho Mukha Svanasana":"dWv294U0zQ8","Ananda Balasana":"DhTHrCyPD0k","Anjaneyasana":"UP3EQ2Tc4nw","Apanasana":"9Xone6SyWhs","Ardha Chandrasana":"qfnz-hDXuBU","Ardha Matsyendrasana":"ooLOBcaWi8U","Ardha Uttanasana":"-fe0HuhvTFs"};
+ const media=VID[p[0]]?`<div class="ph vid" style="border-radius:12px;margin-bottom:14px"><iframe src="https://www.youtube.com/embed/${VID[p[0]]}" title="${p[1]} video demonstration" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`:`<div class="ph" role="img" aria-label="${FIG[p[0]]?"Line illustration of ":"No illustration yet for "}${p[1]}" style="border-radius:12px;margin-bottom:14px">${fig(p[0])}</div>`;
+ const FS_IN='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>';
+ d.innerHTML=`<div class="dh"><h3 id="dt">${p[0]}</h3><button class="fsb" id="fs" type="button" aria-label="Enter fullscreen" title="Fullscreen">${FS_IN}</button></div>${media}<div class="en">${p[1]} · ${p[2]?`<i>${p[2]}</i> · `:""}${p[3]}</div><p>${p[5]}</p>${p[6].length?`<h4>How to perform it</h4><ol>${p[6].map(s=>`<li>${s}</li>`).join("")}</ol><h4>Easier variation</h4><p style="margin:0">${p[7]}</p>`:`<p class="note">Step-by-step instructions for this pose are not written yet. Learn it with a qualified teacher or a reputable reference.</p>`}<h4>Precautions</h4><p style="margin:0">${p[8]}</p><p class="note">General educational guidance only. Move without pain and consult a qualified teacher or health professional when unsure.</p><p style="text-align:right;margin:18px 0 0"><button class="btn" id="x">Close</button></p>`;
+ d.showModal();$("#x").onclick=()=>d.close();
+ $("#fs").onclick=()=>{document.fullscreenElement?document.exitFullscreen():d.requestFullscreen&&d.requestFullscreen()}}
+document.addEventListener("fullscreenchange",()=>{const b=$("#fs");if(!b)return;const on=!!document.fullscreenElement;
+ b.setAttribute("aria-label",on?"Exit fullscreen":"Enter fullscreen");b.title=on?"Exit fullscreen":"Fullscreen";
+ b.innerHTML=on?'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h5V3M21 8h-5V3M3 16h5v5M21 16h-5v5"/></svg>':'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>'});
+$("#dlg").addEventListener("close",()=>{if(document.fullscreenElement)document.exitFullscreen()});
 $("#dlg").addEventListener("click",e=>{if(e.target.id==="dlg")e.target.close()});
 $("#q").oninput=e=>{st.q=e.target.value;render()};$("#sort").onchange=render;
 $("#favOnly").onclick=()=>{st.fo=!st.fo;render()};

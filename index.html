@@ -67,6 +67,7 @@ input[type=search]{flex:1;min-width:220px}
 
 .cb{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
 .sk{font-family:'DM Serif Display',serif;font-size:1.25rem;color:var(--forest)}.en{font-size:.9rem;color:var(--muted);margin-top:-4px}
+.sr{display:inline-flex;align-items:center;justify-content:center;min-width:2.1em;height:1.7em;padding:0 .55em;margin-right:8px;border-radius:999px;background:var(--forest);color:var(--bg);font:600 .72rem/1 Inter,sans-serif;letter-spacing:.02em;vertical-align:middle}
 .meta{display:flex;gap:8px;font-size:.75rem}.tag{padding:2px 10px;border-radius:999px;background:var(--sand);color:var(--text)}.tag.d{border:1px solid var(--gold)}
 .row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:auto;padding-top:8px}
 .link{background:#D35400;border:0;color:#fff;font:600 .9rem Inter,sans-serif;cursor:pointer;text-decoration:none;flex:1;text-align:center;padding:10px 20px;border-radius:999px;box-shadow:0 3px 10px #D3540040;transition:background .2s,transform .2s}
@@ -246,8 +247,8 @@ function render(){
  $("#favOnly").setAttribute("aria-pressed",st.fo);
  $("#count").textContent=L.length+" "+(L.length===1?"pose":"poses")+" found";
  $("#grid").innerHTML=L.length?"":"<p>No poses match these filters. Try resetting them.</p>";
- L.forEach(p=>{const id=slug(p[0]),f=fav.has(id),c=document.createElement("article");c.className="card";
-  c.innerHTML=`${IMG[p[0]]?`<div class="ph img"><img src="${IMG[p[0]]}" alt="Step-by-step guide to ${p[1]}" loading="lazy"></div>`:`<div class="ph" role="img" aria-label="${FIG[p[0]]?"Line illustration of ":"No illustration yet for "}${p[1]}">${fig(p[0])}</div>`}<div class="cb"><div class="sk">${p[0]}</div><div class="en">${p[1]}</div><div class="meta"><span class="tag d">${p[3]}</span><span class="tag">${p[4][0]}</span></div><p style="margin:4px 0;font-size:.9rem">${p[5]}</p><div class="row"><button class="link">View pose</button><button class="fav" aria-pressed="${f}" aria-label="${f?"Remove":"Add"} ${p[1]} ${f?"from":"to"} favourites">${f?"♥":"♡"}</button></div></div>`;
+ L.forEach((p,i)=>{const id=slug(p[0]),f=fav.has(id),c=document.createElement("article");c.className="card";
+  c.innerHTML=`${IMG[p[0]]?`<div class="ph img"><img src="${IMG[p[0]]}" alt="Step-by-step guide to ${p[1]}" loading="lazy"></div>`:`<div class="ph" role="img" aria-label="${FIG[p[0]]?"Line illustration of ":"No illustration yet for "}${p[1]}">${fig(p[0])}</div>`}<div class="cb"><div class="sk"><span class="sr" title="Sr No">${i+1}</span>${p[0]}</div><div class="en">${p[1]}</div><div class="meta"><span class="tag d">${p[3]}</span><span class="tag">${p[4][0]}</span></div><p style="margin:4px 0;font-size:.9rem">${p[5]}</p><div class="row"><button class="link">View pose</button><button class="fav" aria-pressed="${f}" aria-label="${f?"Remove":"Add"} ${p[1]} ${f?"from":"to"} favourites">${f?"♥":"♡"}</button></div></div>`;
   c.querySelector(".link").onclick=()=>show(p);
   c.querySelector(".fav").onclick=()=>{f?fav.delete(id):fav.add(id);saveFav();render()};
   $("#grid").append(c)})}

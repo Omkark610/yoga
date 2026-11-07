@@ -78,6 +78,11 @@ dialog{max-width:none;width:90vw;height:90vh;max-height:90vh;border:0;border-rad
 .fsb{flex:none;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);background:var(--sand);color:var(--forest);display:grid;place-items:center;cursor:pointer;padding:0}
 .fsb:hover{border-color:var(--forest)}.fsb svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .ph.vid .vplay{position:relative;display:block;width:100%;height:100%;padding:0;border:0;background:#000;cursor:pointer}.ph.vid .vplay img{width:100%;height:100%;object-fit:cover;display:block}.vbtn{position:absolute;inset:0;margin:auto;width:64px;height:44px;border-radius:12px;background:#D35400;box-shadow:0 4px 14px #0006;transition:transform .2s,background .2s;display:none;}.vbtn::after{content:"";position:absolute;left:26px;top:13px;border-left:16px solid #fff;border-top:9px solid transparent;border-bottom:9px solid transparent}.vplay:hover .vbtn{background:#B94700;transform:scale(1.08)}.vplay:focus-visible{outline:3px solid #FF8A1F;outline-offset:-3px}
+.safe-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center}.safe-row .sub{margin:0}
+.ig{display:flex;align-items:center;gap:14px;padding:16px 22px;border-radius:18px;border:1.5px solid var(--line);background:var(--sand);color:var(--text);text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s}.ig:hover{transform:translateY(-2px);border-color:#D35400;box-shadow:0 6px 18px #D3540030}.ig:focus-visible{outline:3px solid #FF8A1F;outline-offset:2px}
+.ig svg{flex:none;width:44px;height:44px;padding:9px;border-radius:12px;background:linear-gradient(45deg,#F5A623,#E1306C 55%,#833AB4);fill:none;stroke:#fff;stroke-width:2}.ig svg .dot{fill:#fff;stroke:none}
+.ig span{display:flex;flex-direction:column;line-height:1.3}.ig strong{font-size:.95rem}.ig em{font-style:normal;font-size:.85rem;color:#D35400;font-weight:600}
+@media (max-width:820px){.safe-row{grid-template-columns:1fr;gap:18px}.ig{justify-self:start}}
 .ph.vid{height:auto;padding:0;aspect-ratio:16/9;overflow:hidden;border:0}.ph.vid iframe{width:100%;height:100%;border:0;display:block}
 dialog[open]{display:flex;flex-direction:column;overflow:hidden}
 .dh{flex:none}.db{display:grid;grid-template-columns:60fr 40fr;gap:24px;flex:1;min-height:0}
@@ -129,7 +134,8 @@ footer{background:var(--ever);color:#CFE3DE;padding:36px 0;font-size:.88rem}
 <div class="grid" id="grid"></div></div></section>
 
 <section id="safety"><div class="wrap"><h2>Practise with care</h2>
-<p class="sub">Yoga Atlas is an educational resource, not a substitute for medical advice or qualified instruction. Move without pain, use props freely, and seek a qualified teacher for inversions, advanced backbends and poses that load the neck. Not every pose suits every body.</p></div></section>
+<div class="safe-row"><p class="sub">Yoga Atlas is an educational resource, not a substitute for medical advice or qualified instruction. Move without pain, use props freely, and seek a qualified teacher for inversions, advanced backbends and poses that load the neck. Not every pose suits every body.</p>
+<a class="ig" href="https://www.instagram.com/happyriseyoga" target="_blank" rel="noopener noreferrer" aria-label="Follow Happy Rise Yoga on Instagram (opens in a new tab)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" class="dot"/></svg><span><strong>Follow on Instagram</strong><em>@happyriseyoga</em></span></a></div></div></section>
 </main>
 <footer><div class="wrap">© Yoga Atlas · Favourites are stored in this browser only and won’t sync between devices. Pose figures are original line illustrations made for this site, not photographs.</div></footer>
 
